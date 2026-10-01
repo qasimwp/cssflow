@@ -89,7 +89,7 @@ The documentation covers:
 
 ## Development
 
-This repository contains the CSSFlow source and development history.
+This repository contains the public CSSFlow source code and release documentation.
 
 The distributable WordPress plugin is contained in:
 
