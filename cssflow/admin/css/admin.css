@@ -1,0 +1,3099 @@
+/**
+ * CSSFlow administration styles.
+ *
+ * @package CSSFlow
+ */
+
+.cssflow-code-editor-wrap {
+	max-width: 1100px;
+}
+
+.cssflow-code-editor-wrap .CodeMirror {
+	border: 1px solid #8c8f94;
+	min-height: 420px;
+}
+.cssflow-snippets-header .cssflow-add-snippet-button .dashicons {
+    color: #ffff !important;
+}
+.cssflow-code-editor-wrap .CodeMirror-focused {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+span.dashicons.dashicons-plus-alt2, aside.cssflow-editor-sidebar .dashicons {
+    line-height: normal !important;
+}
+.cssflow-code-editor-wrap textarea#cssflow-css-code {
+	min-height: 420px;
+	width: 100%;
+}
+.cssflow-tools-grid.cssflow-support-grid span.dashicons.dashicons-external:before {
+    color: #fff;
+}
+.cssflow-css-problems {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	margin-top: 12px;
+	max-width: 1100px;
+	padding: 12px 14px;
+}
+
+.cssflow-css-problems h3 {
+	font-size: 14px;
+	line-height: 1.4;
+	margin: 0;
+}
+
+.cssflow-css-problems-summary {
+	margin: 0;
+}
+
+.cssflow-css-problems-list {
+	margin: 8px 0 0 20px;
+}
+
+.cssflow-css-problems-list:empty {
+	display: none;
+}
+
+.cssflow-css-problems-list li {
+	margin-bottom: 4px;
+}
+
+.cssflow-problem-link {
+	text-align: left;
+}
+
+.cssflow-problem-severity {
+	font-weight: 600;
+	margin-right: 4px;
+}
+
+.cssflow-css-problems.has-problems {
+	border-left: 4px solid #dba617;
+}
+
+.cssflow-targeting-panels {
+	max-width: 760px;
+}
+
+.cssflow-targeting-panel {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	margin-top: 12px;
+	padding: 14px 16px 16px;
+}
+
+.cssflow-targeting-panel[hidden] {
+	display: none;
+}
+
+.cssflow-targeting-panel h3,
+.cssflow-targeting-panel h4 {
+	margin-top: 0;
+}
+
+.cssflow-targeting-panel h3 {
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+
+.cssflow-targeting-panel h4 {
+	font-size: 13px;
+	margin-bottom: 4px;
+}
+
+.cssflow-field-label {
+	display: block;
+	font-weight: 600;
+	margin: 14px 0 6px;
+}
+
+.cssflow-content-picker {
+	margin-top: 14px;
+}
+
+.cssflow-content-search-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	max-width: 620px;
+}
+
+.cssflow-content-search-row .regular-text {
+	flex: 1 1 320px;
+	max-width: 100%;
+}
+
+.cssflow-targeting-status {
+	min-height: 20px;
+	margin: 8px 0 0;
+}
+
+.cssflow-search-results,
+.cssflow-selected-targets-list {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	margin: 8px 0 0;
+	max-width: 620px;
+}
+
+.cssflow-search-results:empty,
+.cssflow-selected-targets-list:empty {
+	display: none;
+}
+
+.cssflow-search-results li,
+.cssflow-selected-targets-list li {
+	border-bottom: 1px solid #dcdcde;
+	margin: 0;
+	padding: 8px 10px;
+}
+
+.cssflow-search-results li:last-child,
+.cssflow-selected-targets-list li:last-child {
+	border-bottom: 0;
+}
+
+.cssflow-search-result-button {
+	display: block;
+	text-align: left;
+	width: 100%;
+}
+
+.cssflow-search-result-button[disabled] {
+	color: #646970;
+	cursor: default;
+	text-decoration: none;
+}
+.cssflow-tool-card-footer.cssflow-support-developer-footer span.dashicons.dashicons-external:before,
+.cssflow-tool-card-footer.cssflow-support-actions span.dashicons.dashicons-external:before {
+    color: var(--wp-admin-theme-color);
+}
+.cssflow-tool-card-footer.cssflow-support-actions a.button.button-primary span.dashicons.dashicons-external:before{
+	color: #fff;
+}
+.cssflow-woocommerce-subpanel .cssflow-load-more {
+    margin-top: 10px;
+}
+
+.cssflow-selected-targets {
+	margin-top: 18px;
+}
+
+.cssflow-selected-targets-list li {
+	align-items: center;
+	display: flex;
+	gap: 12px;
+	justify-content: space-between;
+}
+
+.cssflow-selected-target-title {
+	min-width: 0;
+	overflow-wrap: anywhere;
+}
+
+.cssflow-empty-selection {
+	font-style: italic;
+	margin: 8px 0 0;
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-content-search-row {
+		display: block;
+	}
+
+	.cssflow-content-search-row .regular-text,
+	.cssflow-content-search-row .button {
+		margin-bottom: 6px;
+		width: 100%;
+	}
+
+	.cssflow-selected-targets-list li {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 6px;
+	}
+}
+/* CSSFlow Tools. */
+.cssflow-tools-page {
+	max-width: 1180px;
+}
+
+.cssflow-tools-header {
+	align-items: flex-start;
+	display: flex;
+	justify-content: space-between;
+	margin: 18px 0 24px;
+}
+
+.cssflow-tools-page .cssflow-tools-header h1 {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.25;
+	margin: 0 0 8px;
+	padding: 0;
+}
+
+.cssflow-tools-intro {
+	color: #50575e;
+	font-size: 15px;
+	line-height: 1.6;
+	margin: 0;
+	max-width: 720px;
+}
+
+.cssflow-tools-grid {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cssflow-tool-card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	overflow: hidden;
+}
+
+.cssflow-tool-card-header {
+	align-items: flex-start;
+	border-bottom: 1px solid #f0f0f1;
+	display: flex;
+	gap: 14px;
+	padding: 22px 24px 18px;
+}
+
+.cssflow-tool-icon {
+	align-items: center;
+	background: #f0f6fc;
+	border-radius: 8px;
+	color: #2271b1;
+	display: inline-flex;
+	flex: 0 0 42px;
+	font-size: 22px;
+	height: 42px;
+	justify-content: center;
+	line-height: 42px;
+	width: 42px;
+}
+.cssflow-tool-card-body form input#submit[value="Preview Additional CSS"] {
+    margin-top: 20px;
+}
+.cssflow-tool-card h2 {
+	font-size: 18px;
+	line-height: 1.35;
+	margin: 0 0 5px;
+}
+
+.cssflow-tool-card-summary {
+	color: #646970;
+	line-height: 1.55;
+	margin: 0;
+}
+
+.cssflow-tool-card-body {
+	color: #3c434a;
+	flex: 1 1 auto;
+	line-height: 1.6;
+	padding: 18px 24px 22px;
+}
+
+.cssflow-tool-card-body > p:first-child {
+	margin-top: 0;
+}
+
+.cssflow-tool-includes {
+	background: #f6f7f7;
+	border-radius: 6px;
+	margin-top: 18px;
+	padding: 14px 16px;
+}
+
+.cssflow-tool-includes strong {
+	display: block;
+	margin-bottom: 7px;
+}
+
+.cssflow-tool-includes ul {
+	margin: 0 0 0 18px;
+}
+
+.cssflow-tool-includes li {
+	margin-bottom: 5px;
+}
+
+.cssflow-tool-includes li:last-child {
+	margin-bottom: 0;
+}
+
+.cssflow-tool-notice {
+	align-items: flex-start;
+	background: #f6f7f7;
+	border-left: 3px solid #72aee6;
+	display: flex;
+	gap: 10px;
+	margin-top: 18px;
+	padding: 12px 14px;
+}
+
+.cssflow-tool-notice .dashicons {
+	color: #2271b1;
+	flex: 0 0 20px;
+	margin-top: 1px;
+}
+
+.cssflow-tool-notice p {
+	margin: 0;
+}
+
+.cssflow-tool-card-footer {
+	align-items: center;
+	background: #fbfbfc;
+	border-top: 1px solid #f0f0f1;
+	display: flex;
+	gap: 14px;
+	justify-content: space-between;
+	padding: 16px 24px;
+}
+
+.cssflow-tool-card-footer form {
+	margin: 0;
+}
+
+.cssflow-tool-card-footer .button {
+	min-height: 36px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.cssflow-tool-file-type {
+	color: #646970;
+	font-size: 12px;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 960px) {
+	.cssflow-tools-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-tools-header {
+		margin-top: 12px;
+	}
+
+	.cssflow-tools-page .cssflow-tools-header h1 {
+		font-size: 24px;
+	}
+
+	.cssflow-tool-card-header,
+	.cssflow-tool-card-body,
+	.cssflow-tool-card-footer {
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+
+	.cssflow-tool-card-footer {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.cssflow-tool-card-footer .button {
+		width: 100%;
+	}
+
+	.cssflow-tool-card-footer form {
+		width: 100%;
+	}
+}
+
+/* Phase 11.2 import preview. */
+.cssflow-tool-card-wide {
+	grid-column: 1 / -1;
+}
+
+.cssflow-tool-notice-success {
+	background: #f0f6fc;
+	border: 1px solid #c5d9ed;
+}
+
+.cssflow-import-form {
+	margin-top: 20px;
+}
+
+.cssflow-import-file-label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.cssflow-import-form input[type="file"] {
+	background: #fff;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	box-sizing: border-box;
+	max-width: 620px;
+	padding: 8px;
+	width: 100%;
+}
+
+.cssflow-import-form .description {
+	margin: 8px 0 16px;
+}
+
+.cssflow-tools-notice {
+	margin: 0 0 20px;
+}
+
+.cssflow-import-preview {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+	margin-top: 24px;
+	overflow: hidden;
+}
+
+.cssflow-import-preview-header {
+	align-items: flex-start;
+	border-bottom: 1px solid #f0f0f1;
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+	padding: 24px;
+}
+
+.cssflow-import-preview-header h2 {
+    font-size: 20px;
+    margin: 4px 0 7px;
+    outline: none;
+}
+
+.cssflow-import-preview-header p {
+	color: #646970;
+	margin: 0;
+}
+
+.cssflow-preview-eyebrow {
+	color: #2271b1;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.cssflow-preview-status {
+	border-radius: 999px;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 7px 11px;
+	white-space: nowrap;
+}
+
+.cssflow-preview-status.is-ready {
+	background: #edfaef;
+	color: #116329;
+}
+
+.cssflow-preview-status.is-error {
+	background: #fcf0f1;
+	color: #8a2424;
+}
+
+.cssflow-preview-status.is-warning {
+	background: #fcf9e8;
+	color: #6f4e00;
+}
+
+.cssflow-preview-summary-grid {
+	display: grid;
+	gap: 1px;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	background: #dcdcde;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.cssflow-preview-stat {
+	background: #f6f7f7;
+	padding: 16px 20px;
+}
+
+.cssflow-preview-stat strong,
+.cssflow-preview-stat span {
+	display: block;
+}
+
+.cssflow-preview-stat strong {
+	font-size: 22px;
+	line-height: 1.2;
+	margin-bottom: 3px;
+}
+
+.cssflow-preview-stat span {
+	color: #646970;
+	font-size: 12px;
+}
+
+.cssflow-preview-meta {
+	align-items: center;
+	border-bottom: 1px solid #f0f0f1;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 16px;
+	padding: 14px 24px;
+}
+
+.cssflow-preview-meta span {
+	color: #646970;
+	font-size: 12px;
+}
+
+.cssflow-preview-sections {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: minmax(240px, 0.7fr) minmax(0, 1.8fr);
+	padding: 24px;
+}
+
+.cssflow-preview-panel {
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	min-width: 0;
+	padding: 18px;
+}
+
+.cssflow-preview-panel h3 {
+	font-size: 16px;
+	margin: 0 0 5px;
+}
+
+.cssflow-preview-panel-intro {
+	color: #646970;
+	margin: 0 0 15px;
+}
+
+.cssflow-preview-check-list {
+	margin: 0;
+}
+
+.cssflow-preview-check-list li {
+	align-items: flex-start;
+	display: flex;
+	gap: 9px;
+	margin: 0;
+	padding: 9px 0;
+}
+
+.cssflow-preview-check-list li + li {
+	border-top: 1px solid #f0f0f1;
+}
+
+.cssflow-preview-check-list li span:not(.dashicons) {
+	display: block;
+}
+
+.cssflow-preview-check-list .dashicons,
+.cssflow-row-check .dashicons {
+	flex: 0 0 auto;
+}
+
+.cssflow-preview-check-list .is-valid .dashicons,
+.cssflow-row-check.is-valid .dashicons {
+	color: #00a32a;
+}
+
+.cssflow-preview-check-list .is-invalid .dashicons,
+.cssflow-row-check.is-invalid .dashicons {
+	color: #d63638;
+}
+
+.cssflow-row-check.is-warning .dashicons {
+	color: #dba617;
+}
+
+.cssflow-preview-check-list li div > span {
+	color: #8a2424;
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+.cssflow-preview-warning {
+	background: #fcf9e8;
+	border-left: 4px solid #dba617;
+	margin-top: 14px;
+	padding: 10px 12px;
+}
+
+.cssflow-preview-table-wrap {
+	overflow-x: auto;
+}
+
+.cssflow-preview-table th,
+.cssflow-preview-table td {
+	vertical-align: top;
+}
+
+.cssflow-preview-table th:first-child {
+	width: 28%;
+}
+
+.cssflow-conflict-badge {
+	background: #fcf9e8;
+	border-radius: 999px;
+	color: #6e4b00;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 600;
+	margin-top: 6px;
+	padding: 3px 7px;
+}
+
+.cssflow-row-check {
+	align-items: flex-start;
+	display: inline-flex;
+	gap: 5px;
+}
+
+.cssflow-preview-next-step {
+	align-items: flex-start;
+	background: #f6f7f7;
+	border-top: 1px solid #dcdcde;
+	display: flex;
+	gap: 9px;
+	padding: 14px 24px;
+}
+
+.cssflow-preview-next-step p {
+	margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+	.cssflow-preview-summary-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.cssflow-preview-sections {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-import-preview-header {
+		flex-direction: column;
+	}
+
+	.cssflow-preview-status {
+		white-space: normal;
+	}
+
+	.cssflow-preview-summary-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Phase 11.2 preview result feedback and positioning. */
+.cssflow-preview-result-notice {
+	margin: 24px 0 0;
+}
+
+.cssflow-preview-result-notice + .cssflow-import-preview {
+	margin-top: 12px;
+}
+
+.cssflow-import-preview {
+	scroll-margin-top: 42px;
+}
+
+#cssflow-import-preview-title:focus {
+	outline: none;
+}
+
+/* Phase 11.3 import conflict choices and commit actions. */
+
+.cssflow-preview-snippets-heading {
+	align-items: flex-end;
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+	margin-bottom: 14px;
+}
+
+.cssflow-preview-snippets-heading h3 {
+	margin-bottom: 0;
+}
+
+.cssflow-import-bulk-actions {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 12px;
+	justify-content: flex-end;
+}
+
+.cssflow-import-bulk-actions label {
+	font-weight: 600;
+}
+
+.cssflow-import-bulk-actions select {
+	min-width: 245px;
+}
+
+.cssflow-import-selection-summary {
+	color: #646970;
+	font-size: 12px;
+	white-space: nowrap;
+}
+.cssflow-import-action-heading,
+.cssflow-import-action-cell {
+	min-width: 190px;
+	width: 190px;
+}
+
+.cssflow-import-action-cell select {
+	box-sizing: border-box;
+	max-width: none;
+	width: 100%;
+}
+
+.cssflow-import-action-default {
+	color: #50575e;
+	font-weight: 600;
+}
+
+.cssflow-import-commit-actions {
+	align-items: center;
+	background: #fff;
+	border-top: 1px solid #dcdcde;
+	display: flex;
+	gap: 24px;
+	justify-content: space-between;
+	padding: 20px 24px;
+}
+
+.cssflow-import-commit-actions strong {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+
+.cssflow-import-commit-actions p {
+	color: #50575e;
+	margin: 0;
+}
+
+.cssflow-import-commit-actions .button {
+	flex: 0 0 auto;
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-import-commit-actions {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.cssflow-import-commit-actions .button {
+		width: 100%;
+	}
+}
+
+/* Phase 11.4: WordPress Additional CSS preview. */
+.cssflow-additional-css-details {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	border-bottom: 1px solid #dcdcde;
+	background: #f6f7f7;
+}
+
+.cssflow-additional-css-details > div {
+	padding: 16px 22px;
+	border-right: 1px solid #dcdcde;
+}
+
+.cssflow-additional-css-details > div:last-child {
+	border-right: 0;
+}
+
+.cssflow-additional-css-details span,
+.cssflow-additional-css-details strong {
+	display: block;
+}
+
+.cssflow-additional-css-details span {
+	margin-bottom: 5px;
+	color: #646970;
+	font-size: 12px;
+}
+
+.cssflow-additional-css-code {
+	max-height: 420px;
+	margin: 14px 0 0;
+	padding: 18px;
+	overflow: auto;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	background: #f6f7f7;
+	white-space: pre;
+	font-family: Consolas, Monaco, monospace;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+.cssflow-tool-notice-error {
+	border-left-color: #d63638;
+	background: #fcf0f1;
+}
+
+.cssflow-tool-notice-error .dashicons {
+	color: #d63638;
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-additional-css-details {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.cssflow-additional-css-details > div:nth-child(2) {
+		border-right: 0;
+	}
+
+	.cssflow-additional-css-details > div:nth-child(-n+2) {
+		border-bottom: 1px solid #dcdcde;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cssflow-additional-css-details {
+		grid-template-columns: 1fr;
+	}
+
+	.cssflow-additional-css-details > div {
+		border-right: 0;
+		border-bottom: 1px solid #dcdcde;
+	}
+
+	.cssflow-additional-css-details > div:last-child {
+		border-bottom: 0;
+	}
+}
+
+/* Phase 12 output health. */
+.cssflow-output-health-body {
+	padding-top: 20px;
+}
+
+.cssflow-output-health-grid {
+	background: #dcdcde;
+	border: 1px solid #dcdcde;
+	border-radius: 7px;
+	display: grid;
+	gap: 1px;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	overflow: hidden;
+}
+
+.cssflow-output-health-item {
+	background: #f6f7f7;
+	min-width: 0;
+	padding: 18px 20px;
+}
+
+.cssflow-output-health-label {
+	color: #646970;
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	line-height: 1.4;
+	margin-bottom: 7px;
+	text-transform: uppercase;
+}
+
+.cssflow-output-health-value {
+	color: #1d2327;
+	display: block;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1.45;
+	overflow-wrap: anywhere;
+}
+
+.cssflow-output-health-value.is-healthy,
+.cssflow-output-health-value.is-warning {
+	align-items: center;
+	display: flex;
+	gap: 6px;
+}
+
+.cssflow-output-health-value.is-healthy {
+	color: #116329;
+}
+
+.cssflow-output-health-value.is-warning {
+	color: #8a2424;
+}
+
+.cssflow-output-health-value .dashicons {
+	font-size: 18px;
+	height: 18px;
+	line-height: 18px;
+	width: 18px;
+}
+
+@media screen and (max-width: 960px) {
+	.cssflow-output-health-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-output-health-item {
+		padding: 15px 16px;
+	}
+}
+
+/* Phase 13.6 editor workspace. */
+:root {
+	--cssflow-primary: #5b4cf0;
+	--cssflow-primary-hover: #4938dc;
+	--cssflow-primary-focus: rgba(91, 76, 240, 0.24);
+	--cssflow-border: #dcdcde;
+	--cssflow-muted: #646970;
+}
+
+.cssflow-editor-form {
+	max-width: 1800px;
+}
+
+.cssflow-editor-workspace {
+	align-items: start;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: minmax(0, 7fr) minmax(320px, 3fr);
+	margin-top: 12px;
+}
+
+.cssflow-editor-main,
+.cssflow-editor-sidebar {
+	min-width: 0;
+}
+
+.cssflow-editor-main {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.cssflow-editor-name-field,
+.cssflow-editor-code-section,
+.cssflow-editor-sidebar {
+	background: #fff;
+	border: 1px solid var(--cssflow-border);
+	box-sizing: border-box;
+}
+
+.cssflow-editor-name-field {
+	padding: 14px 16px;
+}
+
+.cssflow-editor-primary-label,
+.cssflow-editor-section-title {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin: 0 0 7px;
+}
+
+.cssflow-editor-name-field #cssflow-name {
+	box-sizing: border-box;
+	font-size: 14px;
+	max-width: none;
+	min-height: 38px;
+	width: 100%;
+}
+
+.cssflow-editor-name-field .description {
+	margin: 6px 0 0;
+}
+
+.cssflow-editor-code-section {
+	padding: 16px;
+}
+
+.cssflow-editor-code-section .cssflow-code-editor-wrap,
+.cssflow-editor-code-section .cssflow-css-problems {
+	max-width: none;
+}
+
+.cssflow-editor-code-section .cssflow-code-editor-wrap .CodeMirror,
+.cssflow-editor-code-section .cssflow-code-editor-wrap textarea#cssflow-css-code {
+	min-height: clamp(540px, 64vh, 740px);
+}
+
+.cssflow-editor-code-section #cssflow-css-description {
+	margin: 7px 0 0;
+}
+
+.cssflow-editor-code-section .cssflow-css-problems {
+	background: #f6f7f7;
+	border-color: var(--cssflow-border);
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 14px;
+	padding: 12px 14px;
+}
+
+.cssflow-css-problems-summary::before {
+	color: #00a32a;
+	content: "\f147";
+	display: inline-block;
+	font-family: dashicons;
+	font-size: 20px;
+	line-height: 1;
+	margin-right: 5px;
+	vertical-align: -3px;
+}
+
+.cssflow-css-problems.has-problems .cssflow-css-problems-summary::before {
+	color: #dba617;
+	content: "\f534";
+}
+
+.cssflow-editor-sidebar {
+	align-self: start;
+}
+
+.cssflow-sidebar-section {
+	box-sizing: border-box;
+	padding: 18px;
+}
+
+.cssflow-sidebar-section + .cssflow-sidebar-section {
+	border-top: 1px solid #f0f0f1;
+}
+
+.cssflow-sidebar-heading {
+	align-items: center;
+	display: flex;
+	font-size: 14px;
+	font-weight: 650;
+	gap: 8px;
+	line-height: 1.4;
+	margin: 0 0 12px;
+}
+
+.cssflow-sidebar-heading .dashicons {
+	color: var(--cssflow-primary);
+	font-size: 18px;
+	height: 18px;
+	width: 18px;
+}
+
+.cssflow-editor-sidebar select,
+.cssflow-editor-sidebar input[type="search"] {
+	max-width: none;
+	min-height: 38px;
+	width: 100%;
+}
+
+.cssflow-editor-sidebar .description {
+	color: var(--cssflow-muted);
+	line-height: 1.45;
+	margin: 7px 0 0;
+}
+
+.cssflow-editor-sidebar .cssflow-field-label {
+	font-weight: 600;
+	margin: 14px 0 6px;
+}
+
+.cssflow-editor-sidebar .cssflow-field-label-first {
+	margin-top: 0;
+}
+
+.cssflow-sidebar-targeting .cssflow-targeting-panels {
+	max-width: none;
+}
+
+.cssflow-sidebar-targeting .cssflow-targeting-panel,
+.cssflow-sidebar-targeting .cssflow-woocommerce-subpanel {
+	background: transparent;
+	border: 0;
+	border-top: 1px solid #f0f0f1;
+	margin: 14px 0 0;
+	padding: 14px 0 0;
+}
+
+.cssflow-sidebar-targeting .cssflow-targeting-panel[hidden],
+.cssflow-sidebar-targeting .cssflow-specific-content-details[hidden],
+.cssflow-sidebar-targeting .cssflow-woocommerce-subpanel[hidden],
+.cssflow-custom-breakpoint[hidden],
+.cssflow-load-more[hidden] {
+	display: none !important;
+}
+
+button#cssflow-content-load-more {
+    margin-top: 10px;
+}
+.cssflow-sidebar-targeting .cssflow-content-picker {
+	margin-top: 12px;
+}
+
+.cssflow-sidebar-targeting .cssflow-content-search-row {
+	display: grid;
+	gap: 6px;
+	grid-template-columns: minmax(0, 1fr) auto;
+	max-width: none;
+}
+
+.cssflow-sidebar-targeting .cssflow-content-search-row .regular-text {
+	min-width: 0;
+	width: 100%;
+}
+
+.cssflow-load-more {
+	align-items: center;
+	display: inline-flex;
+	gap: 4px;
+}
+
+.cssflow-load-more .dashicons {
+	font-size: 16px;
+	height: 16px;
+	width: 16px;
+}
+
+.cssflow-sidebar-targeting .cssflow-search-results,
+.cssflow-sidebar-targeting .cssflow-selected-targets-list {
+	max-width: none;
+}
+.cssflow-sidebar-targeting .cssflow-targeting-status:not(:empty) {
+	background: #f6f7f7;
+	border-left: 3px solid var(--cssflow-primary);
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #3c434a;
+	font-weight: 500;
+	line-height: 1.45;
+	margin: 10px 0;
+	padding: 9px 11px;
+}
+
+.cssflow-sidebar-targeting .cssflow-targeting-status:not(:empty)::before {
+	color: var(--cssflow-primary);
+	content: "\f348";
+	display: inline-block;
+	font-family: dashicons;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1;
+	margin-right: 6px;
+	vertical-align: -2px;
+}
+
+.cssflow-custom-breakpoint {
+	border-top: 1px solid #f0f0f1;
+	margin-top: 14px;
+	padding-top: 14px;
+}
+
+.cssflow-sidebar-priority #cssflow-priority {
+	min-height: 36px;
+	width: 88px;
+}
+
+.cssflow-sidebar-priority .description {
+	max-width: 360px;
+}
+
+.cssflow-status-switch {
+	align-items: center;
+	cursor: pointer;
+	display: inline-flex;
+	gap: 9px;
+	min-height: 32px;
+	position: relative;
+}
+
+.cssflow-status-switch input[type="checkbox"] {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.cssflow-status-switch-control {
+	background: #8c8f94;
+	border: 1px solid #757575;
+	border-radius: 999px;
+	box-sizing: border-box;
+	display: inline-block;
+	height: 24px;
+	position: relative;
+	transition: background-color 120ms ease, border-color 120ms ease;
+	width: 44px;
+}
+
+.cssflow-status-switch-control::after {
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+	content: "";
+	height: 18px;
+	left: 2px;
+	position: absolute;
+	top: 2px;
+	transition: transform 120ms ease;
+	width: 18px;
+}
+
+.cssflow-status-switch input[type="checkbox"]:checked + .cssflow-status-switch-control {
+	background: var(--cssflow-primary);
+	border-color: var(--cssflow-primary);
+}
+
+.cssflow-status-switch input[type="checkbox"]:checked + .cssflow-status-switch-control::after {
+	transform: translateX(20px);
+}
+
+.cssflow-status-switch input[type="checkbox"]:focus-visible + .cssflow-status-switch-control {
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--cssflow-primary);
+	outline: 2px solid transparent;
+}
+
+.cssflow-status-switch-text {
+	font-weight: 600;
+}
+
+.cssflow-status-switch-text-active {
+	display: none;
+}
+
+.cssflow-status-switch input[type="checkbox"]:checked ~ .cssflow-status-switch-text-active {
+	display: inline;
+}
+
+.cssflow-status-switch input[type="checkbox"]:checked ~ .cssflow-status-switch-text-inactive {
+	display: none;
+}
+
+.cssflow-editor-save-actions {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 14px;
+}
+
+.cssflow-editor-save-actions .button {
+	align-items: center;
+	border-radius: 6px;
+	display: inline-flex;
+	font-size: 13px;
+	font-weight: 600;
+	justify-content: center;
+	min-height: 38px;
+	padding: 0 15px;
+}
+
+.cssflow-editor-save-actions .cssflow-primary-button {
+	background: var(--cssflow-primary);
+	border-color: var(--cssflow-primary);
+	color: #fff;
+	min-width: 128px;
+}
+
+.cssflow-editor-save-actions .cssflow-primary-button:hover,
+.cssflow-editor-save-actions .cssflow-primary-button:focus {
+	background: var(--cssflow-primary-hover);
+	border-color: var(--cssflow-primary-hover);
+	color: #fff;
+}
+
+.cssflow-editor-save-actions .cssflow-primary-button:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--cssflow-primary-focus);
+}
+
+.cssflow-back-button {
+	gap: 4px;
+}
+
+.cssflow-back-button .dashicons {
+	font-size: 16px;
+	height: 16px;
+	width: 16px;
+}
+
+@media screen and (max-width: 1180px) {
+	.cssflow-editor-workspace {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.cssflow-editor-sidebar {
+		grid-row: auto;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-editor-workspace {
+		gap: 14px;
+	}
+
+	.cssflow-editor-name-field,
+	.cssflow-editor-code-section,
+	.cssflow-sidebar-section {
+		padding: 14px;
+	}
+
+	.cssflow-editor-code-section .cssflow-code-editor-wrap .CodeMirror,
+	.cssflow-editor-code-section .cssflow-code-editor-wrap textarea#cssflow-css-code {
+		min-height: 420px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cssflow-sidebar-targeting .cssflow-content-search-row {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.cssflow-editor-save-actions .button {
+		width: 100%;
+	}
+}
+
+/* Phase 13.7 All CSS management screen. */
+.cssflow-snippets-page {
+	max-width: 1800px;
+}
+
+.cssflow-snippets-header {
+	margin: 18px 0 15px;
+}
+
+.cssflow-snippets-title-row {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.cssflow-snippets-header h1 {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0;
+}
+
+.cssflow-snippets-header p {
+	color: var(--cssflow-muted);
+	font-size: 14px;
+	line-height: 1.5;
+	margin: 6px 0 0;
+	max-width: 720px;
+}
+
+.cssflow-snippets-page .cssflow-primary-button {
+	align-items: center;
+	background: var(--cssflow-primary);
+	border-color: var(--cssflow-primary);
+	border-radius: 6px;
+	color: #fff;
+	display: inline-flex;
+	font-weight: 600;
+	gap: 5px;
+	justify-content: center;
+	min-height: 38px;
+	padding: 0 14px;
+}
+
+.cssflow-snippets-page .cssflow-primary-button:hover,
+.cssflow-snippets-page .cssflow-primary-button:focus {
+	background: var(--cssflow-primary-hover);
+	border-color: var(--cssflow-primary-hover);
+	color: #fff;
+}
+
+.cssflow-snippets-page .cssflow-primary-button:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--cssflow-primary-focus);
+}
+
+.cssflow-add-snippet-button .dashicons {
+	color: currentColor;
+	font-size: 17px;
+	height: 17px;
+	line-height: 17px;
+	width: 17px;
+}
+
+.cssflow-snippets-page > .notice {
+	margin: 0 0 16px;
+}
+
+.cssflow-snippets-views {
+	min-width: 0;
+}
+
+.cssflow-snippets-views .subsubsub {
+	float: none;
+	margin: 0;
+}
+
+.cssflow-snippets-views .subsubsub a.current {
+	color: #1d2327;
+	font-weight: 600;
+}
+
+.cssflow-snippets-toolbar {
+	align-items: center;
+	display: flex;
+	gap: 16px;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.cssflow-snippets-search {
+	margin: 0 0 0 auto;
+}
+
+
+@media screen and (max-width: 782px) {
+	.cssflow-snippets-toolbar {
+		align-items: stretch;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.cssflow-snippets-search {
+		margin-left: 0;
+	}
+}
+
+.cssflow-snippets-search .search-box {
+	align-items: center;
+	display: flex;
+	gap: 6px;
+	margin: 0;
+}
+
+.cssflow-snippets-search .search-box input[type="search"] {
+	min-height: 34px;
+	min-width: 260px;
+}
+
+.cssflow-snippets-search .search-box .button {
+	min-height: 34px;
+}
+
+.cssflow-snippets-table-form .tablenav.top {
+	background: #fff;
+	border: 1px solid var(--cssflow-border);
+	border-bottom: 0;
+	box-sizing: border-box;
+	height: auto;
+	margin: 0;
+	min-height: 54px;
+	padding: 9px 10px;
+}
+
+.cssflow-snippets-table-form .tablenav.bottom {
+	margin-top: 8px;
+}
+
+.cssflow-snippets-table-form .tablenav.top .tablenav-pages {
+	margin: 2px 0 0;
+}
+
+.cssflow-list-actions,
+.cssflow-bulk-controls,
+.cssflow-filter-controls {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.cssflow-list-actions {
+	gap: 14px;
+}
+
+.cssflow-list-actions select {
+	margin: 0;
+	max-width: 190px;
+	min-height: 32px;
+}
+
+.cssflow-list-actions .button {
+	margin: 0;
+	min-height: 32px;
+}
+
+.cssflow-snippets-page .wp-list-table {
+	border-color: var(--cssflow-border);
+	box-shadow: none;
+}
+
+.cssflow-snippets-page .wp-list-table thead th,
+.cssflow-snippets-page .wp-list-table thead td {
+	background: #f6f7f7;
+	border-bottom-color: var(--cssflow-border);
+}
+
+.cssflow-snippets-page .wp-list-table tbody td,
+.cssflow-snippets-page .wp-list-table tbody th {
+	padding-bottom: 13px;
+	padding-top: 13px;
+	vertical-align: middle;
+}
+
+.cssflow-snippets-page .wp-list-table tbody tr:hover td,
+.cssflow-snippets-page .wp-list-table tbody tr:hover th {
+	background: #fbfbfc;
+}
+
+.cssflow-snippets-page .column-name {
+	width: 29%;
+}
+
+.cssflow-snippets-page .column-status {
+	width: 115px;
+}
+
+.cssflow-snippets-page .column-scope_type {
+	width: 23%;
+}
+
+.cssflow-snippets-page .column-responsive_type {
+	width: 18%;
+}
+
+.cssflow-snippets-page .column-priority {
+	text-align: center;
+	width: 78px;
+}
+
+.cssflow-snippets-page .column-updated_at {
+	color: #50575e;
+	font-size: 12px;
+	width: 118px;
+}
+
+.cssflow-date-value {
+	display: inline-flex;
+	flex-direction: column;
+	font-variant-numeric: tabular-nums;
+	gap: 2px;
+	line-height: 1.35;
+	white-space: nowrap;
+}
+
+.cssflow-date-day {
+	color: #3c434a;
+	font-weight: 500;
+}
+
+.cssflow-date-time {
+	color: var(--cssflow-muted);
+	font-size: 11px;
+}
+
+.cssflow-snippet-name .row-title {
+	color: #1d2327;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.cssflow-snippet-name .row-title:hover,
+.cssflow-snippet-name .row-title:focus {
+	color: var(--cssflow-primary);
+}
+
+.cssflow-snippet-description {
+	color: var(--cssflow-muted);
+	display: -webkit-box;
+	font-size: 12px;
+	line-height: 1.45;
+	margin-top: 3px;
+	max-width: 520px;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+.cssflow-snippets-page .row-actions {
+	color: #a7aaad;
+	margin-top: 5px;
+}
+
+.cssflow-snippets-page .row-actions a {
+	align-items: center;
+	display: inline-flex;
+	gap: 3px;
+}
+
+.cssflow-snippets-page .row-actions .dashicons {
+	font-size: 14px;
+	height: 14px;
+	line-height: 14px;
+	width: 14px;
+}
+
+.cssflow-snippets-page .row-actions .submitdelete {
+	color: #b32d2e;
+}
+
+.cssflow-snippets-page .row-actions .submitdelete:hover,
+.cssflow-snippets-page .row-actions .submitdelete:focus {
+	color: #8a2424;
+}
+
+.cssflow-list-status-toggle {
+	align-items: center;
+	color: #50575e;
+	display: inline-flex;
+	font-weight: 600;
+	gap: 7px;
+	text-decoration: none;
+}
+
+.cssflow-list-status-toggle:hover,
+.cssflow-list-status-toggle:focus {
+	color: #1d2327;
+}
+
+.cssflow-list-status-toggle:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.cssflow-list-status-control {
+	background: #8c8f94;
+	border: 1px solid #757575;
+	border-radius: 999px;
+	box-sizing: border-box;
+	display: inline-block;
+	height: 22px;
+	position: relative;
+	transition: background-color 120ms ease, border-color 120ms ease;
+	width: 40px;
+}
+
+.cssflow-list-status-control::after {
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+	content: "";
+	height: 16px;
+	left: 2px;
+	position: absolute;
+	top: 2px;
+	transition: transform 120ms ease;
+	width: 16px;
+}
+
+.cssflow-list-status-toggle.is-active .cssflow-list-status-control {
+	background: var(--cssflow-primary);
+	border-color: var(--cssflow-primary);
+}
+
+.cssflow-list-status-toggle.is-active .cssflow-list-status-control::after {
+	transform: translateX(18px);
+}
+
+.cssflow-list-status-toggle:focus-visible .cssflow-list-status-control {
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--cssflow-primary);
+}
+
+.cssflow-list-status-toggle.is-loading {
+	cursor: default;
+}
+
+.cssflow-list-status-toggle.is-loading .cssflow-list-status-control {
+	opacity: 0.88;
+}
+
+.cssflow-list-status-text {
+	font-size: 12px;
+}
+
+.cssflow-meta-pill {
+	background: #f6f7f7;
+	border: 1px solid #cfd2d5;
+	border-radius: 7px;
+	box-sizing: border-box;
+	color: #3c434a;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.4;
+	max-width: 100%;
+	padding: 5px 9px;
+}
+
+.cssflow-responsive-pill {
+	background: #f8f7ff;
+	border-color: #cbc4ff;
+	color: #4438b8;
+}
+
+.cssflow-priority-value {
+	background: #f6f7f7;
+	border-radius: 4px;
+	display: inline-block;
+	font-size: 12px;
+	font-variant-numeric: tabular-nums;
+	min-width: 28px;
+	padding: 3px 6px;
+	text-align: center;
+}
+
+.cssflow-list-empty-state {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 190px;
+	padding: 28px 20px;
+	text-align: center;
+}
+
+.cssflow-list-empty-state > .dashicons {
+	color: var(--cssflow-primary);
+	font-size: 30px;
+	height: 30px;
+	margin-bottom: 10px;
+	width: 30px;
+}
+
+.cssflow_snippets .cssflow-list-empty-brand-icon {
+	align-items: center;
+	color: var(--cssflow-primary);
+	display: inline-flex;
+	font-size: 28px;
+	font-weight: 600;
+	justify-content: center;
+	line-height: 1;
+	margin-bottom: 14px;
+}
+
+.cssflow_snippets .cssflow-list-empty-brand-brace {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.cssflow_snippets .cssflow-list-empty-brand-wave {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1;
+	margin: 0 1px;
+}
+
+.cssflow-list-empty-state strong {
+	font-size: 15px;
+}
+
+.cssflow-list-empty-state p {
+	color: var(--cssflow-muted);
+	margin: 5px 0 14px;
+}
+
+.cssflow-list-empty-filtered > .dashicons {
+	color: #646970;
+}
+
+@media screen and (max-width: 1200px) {
+	.cssflow-list-actions {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 8px;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-snippets-title-row {
+		align-items: center;
+	}
+
+	.cssflow-snippets-toolbar,
+	.cssflow-snippets-search,
+	.cssflow-snippets-search .search-box {
+		width: 100%;
+	}
+
+	.cssflow-snippets-search .search-box {
+		align-items: stretch;
+		display: flex;
+	}
+
+	.cssflow-snippets-search .search-box input[type="search"] {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+
+	.cssflow-snippets-table-form .tablenav.top {
+		border-bottom: 1px solid var(--cssflow-border);
+		margin-bottom: 8px;
+	}
+
+	.cssflow-list-actions,
+	.cssflow-bulk-controls,
+	.cssflow-filter-controls {
+		align-items: stretch;
+		width: 100%;
+	}
+
+	.cssflow-bulk-controls,
+	.cssflow-filter-controls {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+	}
+
+	.cssflow-filter-controls select,
+	.cssflow-bulk-controls select {
+		max-width: none;
+		width: 100%;
+	}
+
+	.cssflow-filter-controls select:nth-of-type(2),
+	.cssflow-filter-controls select:nth-of-type(3) {
+		grid-column: 1 / -1;
+	}
+
+	.cssflow-snippets-page .wp-list-table tbody td,
+	.cssflow-snippets-page .wp-list-table tbody th {
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	.cssflow-snippets-page .wp-list-table .column-status,
+	.cssflow-snippets-page .wp-list-table .column-scope_type,
+	.cssflow-snippets-page .wp-list-table .column-responsive_type,
+	.cssflow-snippets-page .wp-list-table .column-priority,
+	.cssflow-snippets-page .wp-list-table .column-updated_at {
+		width: auto;
+	}
+
+	.cssflow-snippets-page .wp-list-table td[data-colname]::before {
+		font-weight: 600;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cssflow-snippets-search .search-box {
+		flex-direction: column;
+	}
+
+	.cssflow-snippets-search .search-box .button,
+	.cssflow-add-snippet-button {
+		width: 100%;
+	}
+
+	.cssflow-bulk-controls,
+	.cssflow-filter-controls {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.cssflow-filter-controls select,
+	.cssflow-filter-controls .button,
+	.cssflow-bulk-controls select,
+	.cssflow-bulk-controls .button {
+		grid-column: 1;
+		width: 100%;
+	}
+}
+
+/* Phase 13.8 Breakpoints management. */
+.cssflow-breakpoints-page .cssflow-breakpoints-shell {
+	max-width: 1440px;
+}
+
+.cssflow-breakpoints-header {
+	margin-bottom: 16px;
+}
+
+.cssflow-breakpoints-header h1 {
+	margin-bottom: 4px;
+}
+
+.cssflow-breakpoints-header p,
+.cssflow-breakpoints-section-heading p,
+.cssflow-breakpoint-add-header p,
+.cssflow-breakpoints-empty-state p {
+	color: var(--cssflow-muted);
+}
+
+.cssflow-breakpoints-header p,
+.cssflow-breakpoints-section-heading p,
+.cssflow-breakpoint-add-header p {
+	margin: 0;
+}
+
+.cssflow-breakpoints-intro {
+	align-items: flex-start;
+	background: #f6f7f7;
+	border: 1px solid var(--cssflow-border);
+	border-radius: 6px;
+	display: flex;
+	gap: 9px;
+	margin: 0 0 24px;
+	max-width: 920px;
+	padding: 11px 13px;
+}
+
+.cssflow-breakpoints-intro .dashicons {
+	color: var(--cssflow-primary);
+	flex: 0 0 auto;
+	margin-top: 1px;
+}
+
+.cssflow-breakpoints-intro p {
+	margin: 0;
+}
+
+.cssflow-breakpoints-section {
+	margin-top: 28px;
+}
+
+.cssflow-breakpoints-section + .cssflow-breakpoints-section {
+	border-top: 1px solid var(--cssflow-border);
+	padding-top: 28px;
+}
+
+.cssflow-breakpoints-section-heading {
+	align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 14px;
+}
+
+.cssflow-breakpoints-section-heading h2 {
+	font-size: 18px;
+	line-height: 1.35;
+	margin: 0 0 4px;
+}
+
+.cssflow-breakpoints-grid {
+	display: grid;
+	gap: 16px;
+}
+
+.cssflow-breakpoints-grid-defaults {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cssflow-breakpoints-grid-custom {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cssflow-breakpoint-card,
+.cssflow-breakpoint-add-card,
+.cssflow-breakpoints-empty-state {
+	background: #fff;
+	border: 1px solid var(--cssflow-border);
+	border-radius: 7px;
+	box-sizing: border-box;
+}
+
+.cssflow-breakpoint-card {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	padding: 18px;
+}
+
+.cssflow-breakpoint-card:target,
+.cssflow-breakpoint-add-card:target {
+	border-color: var(--cssflow-primary);
+	box-shadow: 0 0 0 1px var(--cssflow-primary-focus);
+}
+
+.cssflow-breakpoint-card-header {
+	align-items: flex-start;
+	display: flex;
+	gap: 12px;
+	justify-content: space-between;
+	margin-bottom: 18px;
+}
+
+.cssflow-breakpoint-card-title-wrap {
+	align-items: flex-start;
+	display: flex;
+	gap: 10px;
+	min-width: 0;
+}
+
+.cssflow-breakpoint-card-title-wrap > .dashicons {
+	background: #f0efff;
+	border-radius: 6px;
+	color: var(--cssflow-primary);
+	flex: 0 0 auto;
+	font-size: 19px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	width: 34px;
+}
+
+.cssflow-breakpoint-title-row {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 7px;
+}
+
+.cssflow-breakpoint-title-row h3,
+.cssflow-breakpoint-add-header h3 {
+	font-size: 15px;
+	line-height: 1.4;
+	margin: 0;
+}
+
+.cssflow-breakpoint-badge {
+	background: #f0efff;
+	border-radius: 999px;
+	color: #4938dc;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.4;
+	padding: 2px 7px;
+}
+
+.cssflow-breakpoint-range-summary {
+	color: var(--cssflow-muted);
+	font-size: 12px;
+	font-weight: 500;
+	margin: 2px 0 0;
+}
+
+.cssflow-breakpoint-key {
+	background: #f6f7f7;
+	border-radius: 4px;
+	color: #50575e;
+	flex: 0 0 auto;
+	font-size: 11px;
+	max-width: 45%;
+	overflow: hidden;
+	padding: 3px 6px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.cssflow-breakpoint-form,
+.cssflow-breakpoint-add-form {
+	margin: 0;
+}
+
+.cssflow-breakpoint-width-grid,
+.cssflow-breakpoint-add-grid {
+	display: grid;
+	gap: 14px;
+}
+
+.cssflow-breakpoint-width-grid {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cssflow-breakpoint-add-grid {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cssflow-breakpoint-field {
+	min-width: 0;
+}
+
+.cssflow-breakpoint-field-full {
+	margin-bottom: 14px;
+}
+
+.cssflow-breakpoint-field label {
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin-bottom: 6px;
+}
+
+.cssflow-breakpoint-field input[type="text"] {
+	box-sizing: border-box;
+	max-width: none;
+	min-height: 36px;
+	width: 100%;
+}
+
+.cssflow-breakpoint-unit-field {
+	align-items: stretch;
+	display: flex;
+	max-width: 190px;
+}
+
+.cssflow-breakpoint-unit-field input[type="number"] {
+	border-radius: 4px 0 0 4px;
+	box-sizing: border-box;
+	margin: 0;
+	min-height: 36px;
+	min-width: 0;
+	width: 100%;
+}
+
+.cssflow-breakpoint-unit-field > span {
+	align-items: center;
+	background: #f6f7f7;
+	border: 1px solid #8c8f94;
+	border-left: 0;
+	border-radius: 0 4px 4px 0;
+	color: #50575e;
+	display: flex;
+	font-size: 12px;
+	padding: 0 9px;
+}
+
+.cssflow-breakpoint-field .description {
+	font-size: 11px;
+	line-height: 1.4;
+	margin: 5px 0 0;
+}
+
+.cssflow-breakpoint-card-actions {
+	margin-top: 16px;
+}
+
+.cssflow-breakpoint-card-actions .button-primary {
+	background: var(--cssflow-primary);
+	border-color: var(--cssflow-primary);
+	box-shadow: none;
+}
+
+.cssflow-breakpoint-card-actions .button-primary:hover,
+.cssflow-breakpoint-card-actions .button-primary:focus {
+	background: var(--cssflow-primary-hover);
+	border-color: var(--cssflow-primary-hover);
+}
+
+.cssflow-breakpoint-card-actions .button-primary:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--cssflow-primary-focus);
+}
+
+.cssflow-breakpoint-card .notice.inline,
+.cssflow-breakpoint-add-card .notice.inline {
+	margin: 14px 0 0;
+}
+
+.cssflow-breakpoint-card-footer {
+	align-items: center;
+	border-top: 1px solid var(--cssflow-border);
+	display: flex;
+	gap: 12px;
+	justify-content: space-between;
+	margin-top: 18px;
+	padding-top: 13px;
+}
+
+.cssflow-breakpoint-card-footer form {
+	margin: 0;
+}
+
+.cssflow-breakpoint-usage {
+	align-items: center;
+	color: #50575e;
+	display: flex;
+	font-size: 12px;
+	font-weight: 500;
+	gap: 5px;
+}
+
+.cssflow-breakpoint-usage .dashicons {
+	color: #00a32a;
+	font-size: 16px;
+	height: 16px;
+	line-height: 16px;
+	width: 16px;
+}
+
+.cssflow-breakpoint-usage.is-used .dashicons {
+	color: #8a2424;
+}
+
+.cssflow-breakpoint-delete {
+	align-items: center;
+	background: #fff;
+	border: 1px solid #d63638;
+	border-radius: 3px;
+	box-sizing: border-box;
+	color: #b32d2e;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 12px;
+	font-weight: 500;
+	gap: 5px;
+	justify-content: center;
+	line-height: 1.2;
+	min-height: 30px;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+.cssflow-breakpoint-delete .dashicons {
+	font-size: 15px;
+	height: 15px;
+	line-height: 15px;
+	width: 15px;
+}
+
+.cssflow-breakpoint-delete:hover:not(:disabled) {
+	background: #fcf0f1;
+	border-color: #b32d2e;
+	color: #8a2424;
+}
+
+.cssflow-breakpoint-delete:focus-visible {
+	border-color: #b32d2e;
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px #b32d2e;
+	outline: 2px solid transparent;
+}
+
+.cssflow-breakpoint-delete[disabled] {
+	background: #f6f7f7;
+	border-color: #dcdcde;
+	color: #8c8f94;
+	cursor: not-allowed;
+	opacity: 0.8;
+}
+
+.cssflow-breakpoint-add-card {
+	margin: 0 0 28px;
+	padding: 20px;
+}
+
+.cssflow-breakpoint-add-header {
+	align-items: flex-start;
+	display: flex;
+	gap: 10px;
+	margin-bottom: 18px;
+}
+
+.cssflow-breakpoint-add-header > .dashicons {
+	color: var(--cssflow-primary);
+	flex: 0 0 auto;
+	margin-top: 1px;
+}
+
+.cssflow-breakpoint-add-header p {
+	margin-top: 3px;
+}
+
+.cssflow-breakpoints-empty-state {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 16px;
+	min-height: 130px;
+	padding: 22px;
+	text-align: center;
+}
+
+.cssflow-breakpoints-empty-state .dashicons {
+	color: var(--cssflow-primary);
+	font-size: 26px;
+	height: 26px;
+	margin-bottom: 7px;
+	width: 26px;
+}
+
+.cssflow-breakpoints-empty-state strong {
+	font-size: 14px;
+}
+
+.cssflow-breakpoints-empty-state p {
+	margin: 4px 0 0;
+}
+
+@media screen and (max-width: 1100px) {
+	.cssflow-breakpoints-grid-defaults,
+	.cssflow-breakpoints-grid-custom {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-breakpoints-grid-defaults,
+	.cssflow-breakpoints-grid-custom,
+	.cssflow-breakpoint-add-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.cssflow-breakpoint-card-header,
+	.cssflow-breakpoint-card-footer {
+		align-items: flex-start;
+	}
+
+	.cssflow-breakpoint-card-footer {
+		flex-direction: column;
+	}
+
+	.cssflow-breakpoint-key {
+		max-width: 42%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cssflow-breakpoint-card,
+	.cssflow-breakpoint-add-card {
+		padding: 15px;
+	}
+
+	.cssflow-breakpoint-card-header {
+		flex-direction: column;
+	}
+
+	.cssflow-breakpoint-key {
+		max-width: 100%;
+	}
+
+	.cssflow-breakpoint-width-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.cssflow-breakpoint-unit-field {
+		max-width: none;
+	}
+
+	.cssflow-breakpoint-card-actions .button,
+	.cssflow-breakpoint-add-card .button {
+		width: 100%;
+	}
+}
+
+/* Phase 13.9 Variables management. */
+.cssflow-variables-page .cssflow-variables-shell {
+	max-width: 1440px;
+}
+
+.cssflow-variables-header {
+	margin-bottom: 16px;
+}
+
+.cssflow-variables-header h1 {
+	margin-bottom: 4px;
+}
+
+.cssflow-variables-header p,
+.cssflow-variables-section-heading p,
+.cssflow-variable-add-header p,
+.cssflow-variables-empty-state p,
+.cssflow-variable-card-footer p {
+	color: var(--cssflow-muted);
+}
+
+.cssflow-variables-header p,
+.cssflow-variables-section-heading p,
+.cssflow-variable-add-header p {
+	margin: 0;
+}
+
+.cssflow-variables-intro {
+	align-items: flex-start;
+	background: #f6f7f7;
+	border: 1px solid var(--cssflow-border);
+	border-radius: 6px;
+	display: flex;
+	gap: 10px;
+	margin: 0 0 24px;
+	max-width: 920px;
+	padding: 12px 14px;
+}
+
+.cssflow-variables-intro > .dashicons {
+	color: var(--cssflow-primary);
+	flex: 0 0 auto;
+	margin-top: 1px;
+}
+
+.cssflow-variables-intro strong {
+	display: block;
+	margin-bottom: 2px;
+}
+
+.cssflow-variables-intro p {
+	margin: 0;
+}
+
+.cssflow-variables-intro code,
+.cssflow-variable-usage code,
+.cssflow-variable-name {
+	white-space: nowrap;
+}
+
+.cssflow-variables-section {
+	margin-top: 28px;
+}
+
+.cssflow-variables-section + .cssflow-variables-section {
+	border-top: 1px solid var(--cssflow-border);
+	padding-top: 28px;
+}
+
+.cssflow-variables-section-heading {
+	margin-bottom: 14px;
+}
+
+.cssflow-variables-section-heading h2 {
+	font-size: 18px;
+	line-height: 1.35;
+	margin: 0 0 4px;
+}
+
+.cssflow-variable-add-card,
+.cssflow-variable-card,
+.cssflow-variables-empty-state {
+	background: #fff;
+	border: 1px solid var(--cssflow-border);
+	border-radius: 7px;
+	box-sizing: border-box;
+}
+
+.cssflow-variable-add-card {
+	max-width: 1040px;
+	padding: 20px;
+}
+
+.cssflow-variable-add-card:target,
+.cssflow-variable-card:target {
+	border-color: var(--cssflow-primary);
+	box-shadow: 0 0 0 1px var(--cssflow-primary-focus);
+}
+
+.cssflow-variable-add-header {
+	align-items: flex-start;
+	display: flex;
+	gap: 10px;
+	margin-bottom: 18px;
+}
+
+.cssflow-variable-add-header > .dashicons {
+	color: var(--cssflow-primary);
+	flex: 0 0 auto;
+	margin-top: 1px;
+}
+
+.cssflow-variable-add-header h3 {
+	font-size: 15px;
+	line-height: 1.4;
+	margin: 0;
+}
+
+.cssflow-variable-add-header p {
+	margin-top: 3px;
+}
+
+.cssflow-variables-grid {
+	display: grid;
+	gap: 16px;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cssflow-variable-card {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	padding: 18px;
+}
+
+.cssflow-variable-card-header {
+	align-items: flex-start;
+	display: flex;
+	gap: 16px;
+	justify-content: space-between;
+	margin-bottom: 18px;
+}
+
+.cssflow-variable-card-title-wrap {
+	align-items: flex-start;
+	display: flex;
+	gap: 10px;
+	min-width: 0;
+}
+
+.cssflow-variable-card-title-wrap > .dashicons {
+	background: #f0efff;
+	border-radius: 6px;
+	color: var(--cssflow-primary);
+	flex: 0 0 auto;
+	font-size: 19px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	width: 34px;
+}
+
+.cssflow-variable-card-title-wrap h3 {
+	font-size: 15px;
+	line-height: 1.4;
+	margin: 0 0 3px;
+}
+
+.cssflow-variable-name {
+	background: #f6f7f7;
+	border-radius: 4px;
+	color: #50575e;
+	display: inline-block;
+	font-size: 12px;
+	padding: 3px 6px;
+}
+
+.cssflow-variable-meta {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 7px;
+}
+
+.cssflow-variable-color-swatch {
+	background: var(--cssflow-variable-swatch-color);
+	border: 1px solid #c3c4c7;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+	display: inline-block;
+	flex: 0 0 auto;
+	height: 16px;
+	width: 16px;
+}
+
+.cssflow-variable-usage {
+	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	font-size: 11px;
+	gap: 3px;
+	min-width: 0;
+}
+
+.cssflow-variable-usage span {
+	color: var(--cssflow-muted);
+	font-weight: 600;
+}
+
+.cssflow-variable-usage code {
+	max-width: 230px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.cssflow-variable-form {
+	margin: 0;
+}
+
+.cssflow-variable-fields {
+	display: grid;
+	gap: 14px;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cssflow-variable-field {
+	min-width: 0;
+}
+
+.cssflow-variable-field-value {
+	grid-column: 1 / -1;
+}
+
+.cssflow-variable-field label {
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin-bottom: 6px;
+}
+
+.cssflow-variable-field input[type="text"],
+.cssflow-variable-field input[type="number"],
+.cssflow-variable-field textarea {
+	box-sizing: border-box;
+	max-width: none;
+	width: 100%;
+}
+
+.cssflow-variable-field input[type="text"],
+.cssflow-variable-field input[type="number"] {
+	min-height: 36px;
+}
+
+.cssflow-variable-field-order input[type="number"] {
+	max-width: 140px;
+}
+
+.cssflow-variable-field textarea {
+	min-height: 70px;
+	resize: vertical;
+}
+
+.cssflow-variable-name-field {
+	align-items: stretch;
+	display: flex;
+}
+
+.cssflow-variable-name-field > span {
+	align-items: center;
+	background: #f6f7f7;
+	border: 1px solid #8c8f94;
+	border-radius: 4px 0 0 4px;
+	color: #50575e;
+	display: flex;
+	flex: 0 0 auto;
+	font-family: Consolas, Monaco, monospace;
+	font-weight: 600;
+	justify-content: center;
+	min-width: 34px;
+	padding: 0 9px;
+	white-space: nowrap;
+}
+
+.cssflow-variable-name-field input[type="text"] {
+	border-radius: 0 4px 4px 0;
+	margin-left: -1px;
+	min-width: 0;
+}
+
+.cssflow-variable-field .description {
+	font-size: 11px;
+	line-height: 1.4;
+	margin: 5px 0 0;
+}
+
+.cssflow-variable-card-actions {
+	margin-top: 16px;
+}
+
+.cssflow-variable-card-actions .button-primary {
+	background: var(--cssflow-primary);
+	border-color: var(--cssflow-primary);
+	box-shadow: none;
+}
+
+.cssflow-variable-card-actions .button-primary:hover,
+.cssflow-variable-card-actions .button-primary:focus {
+	background: var(--cssflow-primary-hover);
+	border-color: var(--cssflow-primary-hover);
+}
+
+.cssflow-variable-card-actions .button-primary:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--cssflow-primary-focus);
+}
+
+.cssflow-variable-card .notice.inline,
+.cssflow-variable-add-card .notice.inline {
+	margin: 14px 0 0;
+}
+
+.cssflow-variable-card-footer {
+	align-items: center;
+	border-top: 1px solid var(--cssflow-border);
+	display: flex;
+	gap: 14px;
+	justify-content: space-between;
+	margin-top: 18px;
+	padding-top: 13px;
+}
+
+.cssflow-variable-card-footer p {
+	font-size: 11px;
+	line-height: 1.4;
+	margin: 0;
+}
+
+.cssflow-variable-card-footer form {
+	flex: 0 0 auto;
+	margin: 0;
+}
+
+.cssflow-variable-delete {
+	align-items: center;
+	background: #fff;
+	border: 1px solid #d63638;
+	border-radius: 3px;
+	box-sizing: border-box;
+	color: #b32d2e;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 12px;
+	font-weight: 500;
+	gap: 5px;
+	justify-content: center;
+	line-height: 1.2;
+	min-height: 30px;
+	padding: 5px 10px;
+}
+
+.cssflow-variable-delete .dashicons {
+	font-size: 15px;
+	height: 15px;
+	line-height: 15px;
+	width: 15px;
+}
+
+.cssflow-variable-delete:hover {
+	background: #fcf0f1;
+	border-color: #b32d2e;
+	color: #8a2424;
+}
+
+.cssflow-variable-delete:focus-visible {
+	border-color: #b32d2e;
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px #b32d2e;
+	outline: 2px solid transparent;
+}
+
+.cssflow-variables-empty-state {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 150px;
+	padding: 24px;
+	text-align: center;
+}
+
+.cssflow-variables-empty-state .dashicons {
+	color: var(--cssflow-primary);
+	font-size: 26px;
+	height: 26px;
+	margin-bottom: 7px;
+	width: 26px;
+}
+
+.cssflow-variables-empty-state strong {
+	font-size: 14px;
+}
+
+.cssflow-variables-empty-state p {
+	margin: 4px 0 0;
+}
+
+@media screen and (max-width: 1100px) {
+	.cssflow-variables-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-variable-fields {
+		grid-template-columns: 1fr;
+	}
+
+	.cssflow-variable-field-value {
+		grid-column: auto;
+	}
+
+	.cssflow-variable-card-header,
+	.cssflow-variable-card-footer {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.cssflow-variable-usage {
+		align-items: flex-start;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cssflow-variable-card,
+	.cssflow-variable-add-card {
+		padding: 15px;
+	}
+
+	.cssflow-variable-card-actions .button,
+	.cssflow-variable-add-card .button,
+	.cssflow-variable-delete {
+		width: 100%;
+	}
+
+	.cssflow-variable-card-footer form {
+		width: 100%;
+	}
+}
+
+/* CSSFlow Support. */
+.cssflow-support-page .cssflow-tool-card-body {
+	min-height: 0;
+}
+
+.cssflow-support-link-list,
+.cssflow-support-service-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cssflow-support-link-list li + li,
+.cssflow-support-service-list li + li {
+	border-top: 1px solid #f0f0f1;
+}
+
+.cssflow-support-link-list a,
+.cssflow-support-service-list li {
+	align-items: center;
+	display: flex;
+	gap: 10px;
+	min-height: 40px;
+}
+
+.cssflow-support-link-list a {
+	color: #1d2327;
+	font-weight: 500;
+	padding: 7px 2px;
+	text-decoration: none;
+}
+
+.cssflow-support-link-list a:hover,
+.cssflow-support-link-list a:focus {
+	color: var(--cssflow-primary);
+}
+
+.cssflow-support-link-list a:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--cssflow-primary-focus);
+	outline: 0;
+}
+
+.cssflow-support-link-list .dashicons,
+.cssflow-support-service-list .dashicons {
+	color: var(--cssflow-primary);
+	flex: 0 0 18px;
+	font-size: 18px;
+	height: 18px;
+	line-height: 18px;
+	width: 18px;
+}
+
+.cssflow-support-service-list li {
+	padding: 8px 2px;
+}
+
+.cssflow-support-guidance {
+	align-items: flex-start;
+	background: #f6f7f7;
+	border-radius: 6px;
+	display: flex;
+	gap: 9px;
+	margin-top: 18px;
+	padding: 12px 14px;
+}
+
+.cssflow-support-guidance .dashicons {
+	color: var(--cssflow-primary);
+	flex: 0 0 20px;
+	margin-top: 1px;
+}
+
+.cssflow-support-guidance p {
+	margin: 0;
+}
+
+.cssflow-support-email {
+	color: #50575e;
+	margin: 16px 0 0;
+}
+
+.cssflow-support-email strong {
+	color: #1d2327;
+}
+
+.cssflow-support-email a {
+	word-break: break-word;
+}
+
+.cssflow-support-actions {
+	justify-content: flex-start;
+}
+
+.cssflow-support-actions .button,
+.cssflow-support-page .cssflow-tool-card-footer .button {
+	align-items: center;
+	display: inline-flex;
+	gap: 5px;
+	justify-content: center;
+}
+
+.cssflow-support-page .button-primary {
+	background: var(--cssflow-primary);
+	border-color: var(--cssflow-primary);
+	color: #fff;
+}
+
+.cssflow-support-page .button-primary:hover,
+.cssflow-support-page .button-primary:focus {
+	background: var(--cssflow-primary-hover);
+	border-color: var(--cssflow-primary-hover);
+	color: #fff;
+}
+
+.cssflow-support-page .button-primary:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--cssflow-primary-focus);
+}
+
+.cssflow-support-page .button:not(.button-primary) {
+	border-color: var(--cssflow-primary);
+	color: var(--cssflow-primary);
+}
+
+.cssflow-support-page .button:not(.button-primary):hover,
+.cssflow-support-page .button:not(.button-primary):focus {
+	border-color: var(--cssflow-primary-hover);
+	color: var(--cssflow-primary-hover);
+}
+
+.cssflow-support-page .button:not(.button-primary):focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--cssflow-primary-focus);
+}
+
+.cssflow-support-actions .button .dashicons,
+.cssflow-support-page .cssflow-tool-card-footer .button .dashicons {
+	font-size: 16px;
+	height: 16px;
+	line-height: 16px;
+	width: 16px;
+}
+
+.cssflow-support-security-card {
+	align-items: center;
+	background: #fbfbfc;
+	flex-direction: row;
+	gap: 24px;
+	justify-content: space-between;
+	padding: 18px 24px;
+}
+
+.cssflow-support-security-content {
+	align-items: center;
+	display: flex;
+	gap: 14px;
+	min-width: 0;
+}
+
+.cssflow-support-security-copy h2 {
+	margin-bottom: 4px;
+}
+
+.cssflow-support-security-copy p {
+	color: #50575e;
+	line-height: 1.55;
+	margin: 0;
+}
+
+.cssflow-support-security-action {
+	flex: 0 0 auto;
+	white-space: nowrap;
+}
+
+.cssflow-support-developer-card .cssflow-tool-card-header,
+.cssflow-support-developer-card .cssflow-tool-card-footer {
+	background: #fbfbfc;
+}
+
+.cssflow-support-developer-footer {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px 24px;
+	justify-content: space-between;
+}
+
+.cssflow-support-connect {
+	align-items: center;
+	color: #50575e;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 12px;
+	gap: 8px;
+}
+
+.cssflow-support-connect-label {
+	color: #1d2327;
+	font-weight: 600;
+}
+
+.cssflow-support-connect-links {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 14px;
+}
+
+.cssflow-support-connect-links a {
+	align-items: center;
+	display: inline-flex;
+	gap: 3px;
+	text-decoration: none;
+}
+
+.cssflow-support-connect-links a:hover,
+.cssflow-support-connect-links a:focus {
+	text-decoration: underline;
+}
+
+.cssflow-support-connect-links a:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--cssflow-primary-focus);
+	outline: 0;
+}
+
+.cssflow-support-connect-links .dashicons {
+	font-size: 14px;
+	height: 14px;
+	line-height: 14px;
+	width: 14px;
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-support-security-card {
+		align-items: stretch;
+		flex-direction: column;
+		gap: 16px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+
+	.cssflow-support-security-content {
+		align-items: flex-start;
+	}
+
+	.cssflow-support-security-action {
+		text-align: center;
+		width: 100%;
+	}
+
+	.cssflow-support-developer-footer {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.cssflow-support-connect {
+		align-items: flex-start;
+	}
+}
+
+
+@media screen and (max-width: 782px) {
+	.cssflow-preview-snippets-heading {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.cssflow-import-bulk-actions {
+		align-items: stretch;
+		justify-content: flex-start;
+	}
+
+	.cssflow-import-bulk-actions select {
+		max-width: none;
+		width: 100%;
+	}
+}

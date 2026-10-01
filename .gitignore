@@ -1,0 +1,17 @@
+# Private development documents
+PROGRESS.md
+SPEC.md
+
+# Release archives
+*.zip
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local editor files
+*.sublime-project
+*.sublime-workspace

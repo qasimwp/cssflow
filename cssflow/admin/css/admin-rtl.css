@@ -1,0 +1,132 @@
+/**
+ * CSSFlow administration RTL adjustments.
+ *
+ * This stylesheet contains only direction-specific overrides. The main
+ * administration stylesheet remains the source of truth for shared styles.
+ *
+ * @package CSSFlow
+ */
+
+.cssflow-css-problems-list {
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+.cssflow-problem-link,
+.cssflow-search-result-button {
+	text-align: right;
+}
+
+.cssflow-problem-severity {
+	margin-left: 4px;
+	margin-right: 0;
+}
+
+.cssflow-css-problems.has-problems {
+	border-left: 1px solid #dcdcde;
+	border-right: 4px solid #dba617;
+}
+
+.cssflow-tool-includes ul {
+	margin-left: 0;
+	margin-right: 18px;
+}
+
+.cssflow-tool-notice {
+	border-left: 0;
+	border-right: 3px solid #72aee6;
+}
+
+.cssflow-preview-warning {
+	border-left: 0;
+	border-right: 4px solid #dba617;
+}
+
+.cssflow-tool-notice-error {
+	border-right-color: #d63638;
+}
+
+.cssflow-additional-css-details > div {
+	border-left: 1px solid #dcdcde;
+	border-right: 0;
+}
+
+.cssflow-additional-css-details > div:last-child {
+	border-left: 0;
+}
+
+@media screen and (max-width: 782px) {
+	.cssflow-additional-css-details > div:nth-child(2) {
+		border-left: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cssflow-additional-css-details > div {
+		border-left: 0;
+	}
+}
+/* Phase 13.6 editor workspace RTL adjustments. */
+.cssflow-editor-row-code .cssflow-code-editor-wrap,
+.cssflow-editor-row-code .CodeMirror,
+.cssflow-editor-row-code textarea#cssflow-css-code {
+	direction: ltr;
+	text-align: left;
+}
+
+.cssflow-status-switch-control::after {
+	left: auto;
+	right: 2px;
+}
+
+.cssflow-status-switch input[type="checkbox"]:checked + .cssflow-status-switch-control::after {
+	transform: translateX(-20px);
+}
+
+/* Phase 13.6 streamlined editor workspace. */
+.cssflow-editor-row-code .CodeMirror,
+.cssflow-editor-row-code textarea#cssflow-css-code {
+	direction: ltr;
+	text-align: left;
+}
+
+.cssflow-status-switch-control::after {
+	left: auto;
+	right: 2px;
+}
+
+.cssflow-status-switch input[type="checkbox"]:checked + .cssflow-status-switch-control::after {
+	transform: translateX(-20px);
+}
+
+
+/* Phase 13.6 third revision. */
+.rtl .cssflow-sidebar-heading .dashicons { margin-left: 8px; margin-right: 0; }
+.rtl .cssflow-back-button .dashicons { transform: rotate(180deg); }
+.rtl .cssflow-editor-main .CodeMirror,
+.rtl .cssflow-editor-main textarea#cssflow-css-code { direction: ltr; text-align: left; }
+
+/* Phase 13.8 Breakpoints management RTL adjustments. */
+.rtl .cssflow-breakpoint-unit-field input[type="number"] {
+	border-radius: 0 4px 4px 0;
+}
+
+.rtl .cssflow-breakpoint-unit-field > span {
+	border-left: 1px solid #8c8f94;
+	border-right: 0;
+	border-radius: 4px 0 0 4px;
+}
+/* Phase 13.9 Variables management RTL adjustments. */
+.rtl .cssflow-variable-name-field > span {
+	border-radius: 0 4px 4px 0;
+}
+
+.rtl .cssflow-variable-name-field input[type="text"] {
+	border-radius: 4px 0 0 4px;
+	margin-left: 0;
+	margin-right: -1px;
+}
+
+.rtl .cssflow-variable-usage {
+	align-items: flex-start;
+}
