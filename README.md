@@ -6,7 +6,7 @@ CSSFlow is a free WordPress plugin for managing custom CSS across global, page, 
 
 **Version:** `1.0.0`
 
-**Current status:** Ready for WordPress.org submission.
+**Current status:** Submitted to WordPress.org — review pending.
 
 - Website: https://qasim-wordpress-developer.com/cssflow/
 - Documentation: https://qasim-wordpress-developer.com/cssflow/documentation/
